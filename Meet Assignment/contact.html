@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us to learn more about Alan Turing and his legacy.">
+    <title>Contact - Alan Turing</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">More</a>
+                <ul class="submenu">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="index.html#early-life">Early Life</a></li>
+            <li><a href="index.html#achievements">Achievements</a></li>
+            <li><a href="index.html#legacy">Legacy</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="contact">
+            <h2>We'd Love to Hear From You!</h2>
+            <p class="intro-text">If you have any questions, suggestions, or want to learn more about Alan Turing, please fill out the form below.</p>
+            <form class="contact-form" novalidate>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Phone number should be 10 digits.">
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Preferred Contact Date</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="topic" class="form-label">Reason for Contact</label>
+                    <select id="topic" class="form-select" required>
+                        <option value="" disabled selected>Select a topic...</option>
+                        <option value="inquiry">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Meet Gaekwad | Mgaekwad3120@conestogac.on.ca</p>
+    </footer>
+
+
+</body>
+</html>
